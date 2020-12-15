@@ -47,6 +47,8 @@ body {
     .jumpGame-menu__button:active {
       transform: scale(0.9);
       color: #d9cb04; }
+    .jumpGame-menu__button--special {
+      font-size: 20px; }
 
 .jumpGame-wrapper {
   border-top-right-radius: 8px;
@@ -93,24 +95,31 @@ body {
   .jumpGame-area__js {
     padding: 0;
     margin: 0;
-    animation: runJS 1s linear infinite;
+    animation: runJS 1.2s linear infinite;
     width: 25px;
     height: 25px;
+    border-radius: 100%;
+    font-weight: 700;
     text-align: center;
-    color: gray;
+    color: black;
     font-size: 20px;
     background-color: #d95a2b;
     position: relative;
     top: 125px;
-    left: 0; }
+    left: 0;
+    font-size: 20px; }
 
 .animation {
   animation: myJump 0.5s ease-out; }
 
 @keyframes runJS {
   0% {
+    background-color: #d95a2b;
+    transform: rotate(360deg);
     left: 480px; }
   100% {
+    background-color: #8fbdd9;
+    transform: rotate(0deg);
     left: 0; } }
 
 @keyframes myJump {

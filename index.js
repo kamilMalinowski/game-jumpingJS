@@ -17,10 +17,10 @@ const sprite = document.querySelector(".sprite--js");
 const js = document.querySelector(".js--js");
 
 const score = document.querySelector(".score--js");
+const reset = document.querySelector(".reset--js");
 
 //buttons
 //1. play
-
 let isOff = false;
 play.addEventListener("click", () => {
   const area = document.querySelector(".area--js");
@@ -31,6 +31,7 @@ play.addEventListener("click", () => {
     setTimeout(() => {
       area.style.display = "block";
       isOff = true;
+      jump.innerHTML = "JUMP";
     }, 800);
   }
 });
@@ -44,7 +45,6 @@ jump.addEventListener("click", (e) => {
 
   setTimeout(() => {
     sprite.classList.remove("animation");
-
   }, 400);
 });
 
@@ -53,8 +53,27 @@ const gameOver = setInterval(() => {
     window.getComputedStyle(sprite).getPropertyValue("top")
   );
   let jsLeft = parseInt(window.getComputedStyle(js).getPropertyValue("left"));
-  if (jsLeft < 25 && jsLeft > -25 && spriteTop >= 135) {
+  if (jsLeft < 50 && jsLeft > -20 && spriteTop >= 135) {
     js.style.animation = "none";
     js.style.left = "50px";
+    sprite.style.animation = "none";
+    score.innerHTML = score.innerHTML + "🏆";
+    reset.innerHTML = "RESET";
+    jump.innerHTML = "X";
+    jump.disabled = true;
+    score.disabled = true;
   }
 }, 10);
+
+// 3. reset
+// reset.addEventListener("click", () => {
+//   score.innerHTML = "0";
+// });
+
+reset.addEventListener("click", (e) => {
+  score.innerHTML = "0";
+  js.style.animation = "runJS 1.2s linear infinite";
+  jump.disabled = false;
+  jump.innerHTML = "JUMP";
+  window.location.reload(true);
+});
