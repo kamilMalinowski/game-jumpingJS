@@ -1,0 +1,24 @@
+{
+  "name": "game-jumpingJS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "npx node-sass -w style.scss style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamilMalinowski/game-jumpingJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamilMalinowski/game-jumpingJS/issues"
+  },
+  "homepage": "https://github.com/kamilMalinowski/game-jumpingJS#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
