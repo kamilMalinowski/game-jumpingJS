@@ -8,23 +8,21 @@
   </head>
   <body>
     <!--GAME-->
-    <main class="main">
-      <section class="notes">
-        <h2 class="notes__title">Jump Game</h2>
-        <div class="jumpGame jumpGame--js">
-          <div class="jumpGame-menu">
-            <button class="jumpGame-menu__button play--js">PLAY</button>
-            <button class="jumpGame-menu__button jump--js">JUMP</button>
-            <button class="jumpGame-menu__button reset--js">RESET</button>
-            <div class="jumpGame-menu__score score--js"></div>
-          </div>
-          <div class="jumpGame-area area--js">
-            <div class="jumpGame-area__sprite sprite--js"></div>
-            <div class="jumpGame-area__js js--js">JS</div>
-          </div>
+    <div class="jumpGame jumpGame--js">
+      <div class="jumpGame-menu">
+        <button class="jumpGame-menu__button play--js">PLAY</button>
+        <button class="jumpGame-menu__button jump--js">JUMP</button>
+        <button class="jumpGame-menu__button reset--js">RESET</button>
+        <button class="jumpGame-menu__button score--js">0</button>
+      </div>
+      <div class="jumpGame-wrapper">
+        <div class="jumpGame-area area--js">
+          <div class="jumpGame-area__sprite sprite--js">JS</div>
+          <div class="jumpGame-area__js js--js"></div>
         </div>
-      </section>
-    </main>
+        <h2 class="jumpGame-wrapper__title">Jumping JS</h2>
+      </div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
