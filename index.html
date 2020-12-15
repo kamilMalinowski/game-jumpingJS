@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jumping JS</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
     <!--GAME-->
     <main class="main">
-        <section class="notes">
-          <h2 class="notes__title">Jump Game</h2>
-          <div class="jumpGame jumpGame--js">
-            <div class="jumpGame-menu">
-              <button class="jumpGame-menu__button play--js">PLAY</button>
-              <button class="jumpGame-menu__button jump--js">JUMP</button>
-              <button class="jumpGame-menu__button reset--js">RESET</button>
-              <span class="jumpGame__score score--js">RESET</span>
-            </div>
-            <div class="jumpGame-area area--js">
-              <div class="jumpGame-area__sprite sprite--js"></div>
-              <div class="jumpGame-area__js js--js">JS</div>
-            </div>
+      <section class="notes">
+        <h2 class="notes__title">Jump Game</h2>
+        <div class="jumpGame jumpGame--js">
+          <div class="jumpGame-menu">
+            <button class="jumpGame-menu__button play--js">PLAY</button>
+            <button class="jumpGame-menu__button jump--js">JUMP</button>
+            <button class="jumpGame-menu__button reset--js">RESET</button>
+            <div class="jumpGame-menu__score score--js"></div>
           </div>
-        </section>
-      </main>
-</body>
+          <div class="jumpGame-area area--js">
+            <div class="jumpGame-area__sprite sprite--js"></div>
+            <div class="jumpGame-area__js js--js">JS</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
 </html>
