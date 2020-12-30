@@ -5,15 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jumping JS</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta name="description" content="Kamil's js game" />
+    <!-- Title -->
+    <meta property="og:title" content="Jumping JS" />
+    <!-- OPTIONAL description. 2-4 sentences. -->
+    <meta property="og:description" content="Kamil's js game" />
+    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+    <meta property="og:url" content="https://kamilmalinowski.github.io/game-jumpingJS/" />
+    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+    <meta
+      property="og:image"
+      content="#"
+    />
   </head>
   <body>
     <!--GAME-->
     <div class="jumpGame jumpGame--js">
       <div class="jumpGame-menu">
-        <button class="jumpGame-menu__button play--js">PLAY</button>
-        <button class="jumpGame-menu__button jump--js"></button>
-        <button class="jumpGame-menu__button reset--js"></button>
-        <button class="jumpGame-menu__button jumpGame-menu__button--special score--js">0</button>
+        <button class="jumpGame-menu__button play--js" aria-label="play">PLAY</button>
+        <button class="jumpGame-menu__button jump--js" aria-label="jump"></button>
+        <button class="jumpGame-menu__button reset--js" aria-label="reset"></button>
+        <button class="jumpGame-menu__button jumpGame-menu__button--special score--js" aria-label="score">0</button>
       </div>
       <div class="jumpGame-wrapper">
         <div class="jumpGame-area area--js">
